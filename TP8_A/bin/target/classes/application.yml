@@ -1,0 +1,18 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /api
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/pfe_base?createDatabaseIfNotExist=true
+    username: root
+    password: AMNASS123
+  jpa:
+    show_sql: true
+    generate-ddl: true
+    hibernate:
+      default-schema: schema
+      ddl-auto: create
+
